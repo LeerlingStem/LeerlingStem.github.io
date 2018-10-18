@@ -20,13 +20,37 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}    
 </style>
 </head>
 <body>
 
 <div class="bg"></div>
 
-<p>This example creates a full page background image. Try to resize the browser window to see how it always will cover the full screen (when scrolled to top), and that it scales nicely on all screen sizes.</p>
+
+<div class="bg-text">
+  <h2>Opgepast</h2>
+  <h1 style="font-size:50px">Ben ik</h1>
+  <p>op tijd aan deze opdracht begonnen ?</p>
+</div>
+    
+    
+<p>In dit voorbeeld wordt een achtergrondafbeelding van de volledige pagina gemaakt. Probeer het formaat van het browservenster aan te passen om te zien hoe het altijd het volledige scherm beslaat (wanneer naar boven scrolled) en dat het goed schaalt op alle schermformaten.</p>
 
 </body>
 </html>
